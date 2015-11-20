@@ -4,10 +4,10 @@ layout: default
 
 <div class="home">
     <div class="row">
-      <ul class="post-list">
+      <ul class="post-list col-md-9">
         <!-- <h1 class="page-heading">Publicaciones</h1> -->
         {% for post in site.posts %}
-          <div class="col-md-9 single-post">
+          <div class="single-post">
             <div class="row">
               <div class="col-md-2 post-meta">
                 <div class="row">
@@ -43,7 +43,7 @@ layout: default
         <legend></legend>
           <div class="categories-style">
             {% for post in site.posts %}
-            <ul>
+            <ul class="">
               <li>
                 {% for category in post.categories %}
                    <i href="/tags/{{ categories }}.html" title="View posts tagged with &quot;{{ categories | first }}&quot;">{{ category }}</i>  
